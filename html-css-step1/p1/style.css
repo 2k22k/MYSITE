@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*nav bar design start*/
+#header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0.5rem;
+    min-width: 50vw;
+
+}
+
+.navbar-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    color: white;
+    margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.items {
+    list-style: none;
+    margin: 0.5rem 1rem;
+    font-size: larger;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.ham,#hamx {
+    color: white;
+    margin: 0.5rem 1rem;
+    display: none;
+}
+
+
+/*nav bar design end*/
+
+/*home design start*/
+.home{
+    width: 100%;
+    min-height: 34vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+}
+.hdiv{
+    min-width: 100%;
+    min-height:34vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.welcome{
+    padding: 2rem 0 0 1rem;
+    font-size: 5rem;
+    min-height:17vh;
+}
+.welcomemessage{
+   padding-left: 1rem;
+   font-size: 2rem;
+   min-height: 10vh;
+}
+/*home design end*/
+/*contact design start*/
+.contact{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+.con{
+    min-width: 50%;
+    min-height: 50vh;
+  
+}
+.con:first-child{
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+}
+input ,label,textarea {
+    display: block;
+    margin: 1rem;
+   }
+
+   button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 1rem;
+   }
+   .con div{
+    font-size: 2rem;
+   }
+/*contact design end*/
+/*about design start*/
+.about{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.one{
+    min-width: 30vw;
+    min-height:50vh ;
+    transition: 1s;
+}
+.one:hover{
+  z-index: 3;
+  
+  transform: scale(1.1);
+}
+.ahead{
+    padding: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/*about design end*/
+footer{
+    text-align: center;
+}
+@media only screen and (max-width: 800px) {
+    .ham {
+        display: initial;
+    }
+    .navbar-bar {
+        flex-direction: column;
+        display: none;
+    }
+    .hdiv{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contain{
+      
+        flex-direction: column;
+    }
+    .con{
+        padding-left: 4rem;
+    }
+    .one{
+       
+        transition: none;
+    }
+}
